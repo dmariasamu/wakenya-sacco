@@ -1,0 +1,110 @@
+*{box-sizing:border-box;}
+row{
+    width: 100%;
+margin: auto;}
+    
+h1{
+    text-align: center;
+}
+.box1{
+    position: relative;
+    border: 1px solid black;
+    padding: 3px;
+    margin-bottom: 15px;
+    background-color: aqua;}
+.box2{
+    position: relative;
+    border: 1px solid black;
+    padding: 3px;
+    margin-bottom: 15px;
+    background-color: aqua;}
+.box3{
+    position: relative;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: aqua;}
+.chicken{
+    position: absolute;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    top:0;
+    right: 0;
+    background-image: linear-gradient(to bottom,rgb(233, 97, 188),rgb(153, 189, 153));
+    width: 20%;
+    font-size:75%;
+    text-align: center;}
+.beef{
+    position: absolute;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    top:0;
+    right: 0;
+    background-image: linear-gradient(to bottom,yellow,rgb(123, 59, 226));
+    width: 20%;
+    font-size:75% ;
+    text-align: center;}
+.sushi{
+    position: absolute;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    top:0;
+    right: 0;
+    background-color: rgb(167, 208, 241);
+    background-image: linear-gradient(to bottom,yellow,green);
+    width: 20%;
+    font-size:75% ;
+    text-align: center;
+    overflow: hidden;}
+
+    @media (min-width:992px){
+        .box1{width:30%;
+        float:left;
+        margin-left: 3%;
+    }
+        .box2{width: 30%;
+        float:left;
+        margin-left: 3%;
+    }
+        .box3{width: 30%;
+        float:left;
+        margin-left: 3%;
+    }
+    }
+    @media (max-width:767px){
+        row{width: 100%;}
+        box1{width:90%;
+            
+        }
+        box2{width:90%;
+            
+        }
+        box3{width:90%;}
+    }
+    @media (max-width:991px) and (min-width:768px){
+        row{
+            width:100%;}
+            .box1{
+                width: 47%;
+                margin-left: 1.5%;
+                margin-right: 1.5%;
+                float: left;
+            
+            }
+            .box2{
+                width: 47%;
+                margin-left: 1.5%;
+                margin-right: 1.5%;
+                float: left;
+            }
+            .box3{
+                width: 98%;
+                clear:left;
+            margin-left: auto;
+        margin-right: auto; }
+            .sushi{
+                width: 10%;
+            }    
+        
+    }
+
+
